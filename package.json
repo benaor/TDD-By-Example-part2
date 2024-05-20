@@ -1,0 +1,38 @@
+{
+    "name": "tdd-by-examples-part-2",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "description": "exercices from the book - TDD By examples - by Kent Beck - part 2",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/node": "latest",
+        "jest": "^29.7.0",
+        "nodemon": "latest",
+        "prettier": "latest",
+        "prettify": "latest",
+        "ts-jest": "^29.1.2",
+        "ts-node": "latest",
+        "typescript": "latest"
+    },
+    "scripts": {
+        "prettier": "prettier --write \"**/*.ts\" \"**/*.js\" \"**/*.json\" \"**/*.css\"",
+        "prettify": "pretty-quick --staged",
+        "dev": "nodemon src/index.ts",
+        "start": "ts-node src/index.ts",
+        "test": "jest",
+        "test:watch": "jest --watchAll --coverage"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn prettify"
+        }
+    },
+    "keywords": [
+        "node",
+        "ts",
+        "typescript"
+    ],
+    "author": {
+        "name": "benaor"
+    }
+}
