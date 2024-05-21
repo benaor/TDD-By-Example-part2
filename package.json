@@ -17,8 +17,8 @@
     "scripts": {
         "prettier": "prettier --write \"**/*.ts\" \"**/*.js\" \"**/*.json\" \"**/*.css\"",
         "prettify": "pretty-quick --staged",
-        "dev": "nodemon src/index.ts",
-        "start": "ts-node src/index.ts",
+        "dev": "nodemon src/TestCaseTest.ts",
+        "start": "ts-node src/TestCaseTest.ts",
         "test": "jest",
         "test:watch": "jest --watchAll --coverage"
     },
